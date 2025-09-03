@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:dio/dio.dart';
 import 'package:open_file/open_file.dart';
-import 'notification_helper.dart';
+import '../../../notification_helper.dart';
 
 Future<void> downloadFile(String url) async {
   final fileName = url.split('/').last;

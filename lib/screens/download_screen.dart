@@ -1,5 +1,6 @@
+// import 'package:file_download_app/src/utils/download_function/download_mobile.dart';
 import 'package:flutter/material.dart';
-import '../download.dart';
+import '../src/utils/download_function/download.dart';
 
 class DownloadScreen extends StatelessWidget {
   const DownloadScreen({super.key});

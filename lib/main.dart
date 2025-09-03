@@ -4,13 +4,11 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'notification_helper.dart';
-import 'download.dart'; // if `requestStoragePermission()` is there
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   if (!kIsWeb) {
-    // ✅ Initialize notifications
     Future<bool> requestStoragePermission() async {
       if (Platform.isAndroid) {
         if (await Permission.manageExternalStorage.isGranted) {
